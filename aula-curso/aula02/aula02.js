@@ -49,7 +49,48 @@ if(notas[5] == undefined){
 
 // Inserindo elementos no final do array
 var nomes = ['Paula', 'Maria', 'Julia'];
-console.log(nomes);
+//console.log(nomes);
 
 nomes.push('Vanessa'); // insere o valor no final do array
-console.log(nomes);
+//console.log(nomes);
+
+// Tamanho do array
+//console.log(nomes.length); // 4
+var tam = nomes.length;
+
+//console.log(tam); //4
+
+// Ordenar os dados de um array
+var alunos = ['Vera', ' Lucia', 'Pedro', 'Fernanda', 'Mário', 'Ana', 'Carla'];
+//console.log(alunos);
+
+alunos.sort(); //  Ordenando array de strings
+//console.log(alunos);
+
+var precos = [123.55, 42.27, 546.99, 23.12];
+//console.log(precos);
+
+//precos.sort(); // ATENÇÃO Ordenação de floats não funciona assim!
+//console.log(precos);
+precos.sort(function(a, b) {return a - b;});
+//console.log(precos);
+
+var idades = [5, 1, 8, 12, 44, 78];
+//console.log(idades);
+
+//idades.sort(); // ATENÇÃO Ordenação de ints não funciona assim!
+//console.log(idades);
+idades.sort(function(a, b){return a - b;});
+//console.log(idades);
+
+// Deletando dados de um array
+delete idades[3];
+//console.log(idades);
+
+idades[3] = 12;
+console.log(idades);
+
+//idades.splice(3, 2); // A partir do índece 3, delete 2 elemento
+//console.log(idades);
+
+idades.splice
