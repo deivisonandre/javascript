@@ -46,7 +46,7 @@ let spans = document.getElementsByTagName('span');
 
 let btn = document.querySelector('button.btn');
 
-let inp = document.querySelector('input[name=produto');
+let inp = document.querySelector('input[name=produto]');
 
 btn.onclick = function(){
     alert(`Temos o texto ${inp.value}`);
